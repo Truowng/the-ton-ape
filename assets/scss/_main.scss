@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -314,8 +318,9 @@ img {
 #about {
   margin-top: 140px;
   @include landscape-phone {
-    margin-top: 100px;
+    margin-top: 50px;
   }
+
   .about-wrapper {
     @include flex(space-between, center, 60px);
     @include tablet {
@@ -393,6 +398,10 @@ img {
 
 #roadmap {
   margin-top: 140px;
+
+  @include landscape-phone {
+    margin-top: 80px;
+  }
 
   .heading-block {
     .title {
@@ -487,6 +496,9 @@ img {
 
 #team {
   margin-top: 140px;
+  @include landscape-phone {
+    margin-top: 80px;
+  }
   .heading-block {
     .title {
       text-align: center;
@@ -539,6 +551,9 @@ img {
 
 #partner {
   margin-top: 140px;
+  @include landscape-phone {
+    margin-top: 80px;
+  }
   .heading-block {
     .title {
       text-align: center;
@@ -661,6 +676,9 @@ img {
 
 #footer {
   margin-top: 100px;
+  @include landscape-phone {
+    margin-top: 80px;
+  }
   .social-list {
     margin-bottom: 56px;
     @include flex(center, center, 24px);

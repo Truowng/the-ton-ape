@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -358,7 +362,7 @@ img {
 }
 @media only screen and (max-width: 767px) {
   #about {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 #about .about-wrapper {
@@ -461,6 +465,11 @@ img {
 
 #roadmap {
   margin-top: 140px;
+}
+@media only screen and (max-width: 767px) {
+  #roadmap {
+    margin-top: 80px;
+  }
 }
 #roadmap .heading-block .title {
   text-align: center;
@@ -566,6 +575,11 @@ img {
 #team {
   margin-top: 140px;
 }
+@media only screen and (max-width: 767px) {
+  #team {
+    margin-top: 80px;
+  }
+}
 #team .heading-block .title {
   text-align: center;
 }
@@ -613,6 +627,11 @@ img {
 
 #partner {
   margin-top: 140px;
+}
+@media only screen and (max-width: 767px) {
+  #partner {
+    margin-top: 80px;
+  }
 }
 #partner .heading-block .title {
   text-align: center;
@@ -748,6 +767,11 @@ img {
 
 #footer {
   margin-top: 100px;
+}
+@media only screen and (max-width: 767px) {
+  #footer {
+    margin-top: 80px;
+  }
 }
 #footer .social-list {
   margin-bottom: 56px;
