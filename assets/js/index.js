@@ -1,3 +1,5 @@
+AOS.init();
+
 const menuBtn = document.querySelector("#header .menu-button");
 const closeBtn = document.querySelector(
   "#header .header-link-list .close-button"
@@ -55,6 +57,7 @@ const teamSlide = new Swiper(".team-slider .swiper", {
   autoplay: {
     delay: 3000,
   },
+  loop: true,
   breakpoints: {
     767: {
       slidesPerView: 2,
