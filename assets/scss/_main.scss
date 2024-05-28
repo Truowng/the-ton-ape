@@ -317,7 +317,7 @@ img {
     margin-top: 100px;
   }
   .about-wrapper {
-    @include flex(space-between, center, 48px);
+    @include flex(space-between, center, 60px);
     @include tablet {
       flex-direction: column-reverse;
     }
@@ -328,11 +328,21 @@ img {
     @include tablet {
       width: 100%;
     }
+    @include landscape-phone {
+      flex-direction: column-reverse;
+    }
     .wrapper {
       width: 50%;
+      @include landscape-phone {
+        @include flex(unset, center, 20px);
+        width: 100%;
+      }
       .about-image {
         margin-bottom: 20px;
         width: 100%;
+        @include landscape-phone {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -371,27 +381,11 @@ img {
         text-align: center;
       }
     }
-    .join-button {
-      font-size: 20px;
-      color: $white;
-      border-radius: 10px;
-      background-color: $yellow;
-      padding: 10px 15px;
-      transition: all ease 0.5s;
-      text-transform: capitalize;
-      border: 1px solid transparent;
-      display: block;
-      width: fit-content;
-      margin-top: 20px;
-      font-family: $font-dela;
+    .button {
+      margin-top: 40px;
+      font-size: 12px;
       @include landscape-phone {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      &:hover {
-        background-color: $white;
-        color: $yellow;
-        border-color: $yellow;
+        margin: 40px auto 0;
       }
     }
   }

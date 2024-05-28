@@ -365,7 +365,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 48px;
+  gap: 60px;
 }
 @media only screen and (max-width: 991px) {
   #about .about-wrapper {
@@ -384,12 +384,31 @@ img {
     width: 100%;
   }
 }
+@media only screen and (max-width: 767px) {
+  #about .about-image-wrapper {
+    flex-direction: column-reverse;
+  }
+}
 #about .about-image-wrapper .wrapper {
   width: 50%;
+}
+@media only screen and (max-width: 767px) {
+  #about .about-image-wrapper .wrapper {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
 }
 #about .about-image-wrapper .wrapper .about-image {
   margin-bottom: 20px;
   width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  #about .about-image-wrapper .wrapper .about-image {
+    margin-bottom: 0;
+  }
 }
 #about .about-image {
   width: 50%;
@@ -430,31 +449,14 @@ img {
     text-align: center;
   }
 }
-#about .about-content .join-button {
-  font-size: 20px;
-  color: #fff;
-  border-radius: 10px;
-  background-color: #e7be05;
-  padding: 10px 15px;
-  transition: all ease 0.5s;
-  text-transform: capitalize;
-  border: 1px solid transparent;
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 20px;
-  font-family: "Dela Gothic One", sans-serif;
+#about .about-content .button {
+  margin-top: 40px;
+  font-size: 12px;
 }
 @media only screen and (max-width: 767px) {
-  #about .about-content .join-button {
-    margin-left: auto;
-    margin-right: auto;
+  #about .about-content .button {
+    margin: 40px auto 0;
   }
-}
-#about .about-content .join-button:hover {
-  background-color: #fff;
-  color: #e7be05;
-  border-color: #e7be05;
 }
 
 #roadmap {
